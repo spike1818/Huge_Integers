@@ -16,7 +16,6 @@ public:
 
 	// Required methods
 	HugeInteger(const std::string& val);
-	HugeInteger(int n);
 	int valCompare(string a, string b);
 	string valAdd(string a, string b);
 	string valSub(string a, string b);
