@@ -37,31 +37,6 @@ HugeInteger::HugeInteger(const std::string& val) {
 	}
 }
 
-HugeInteger::HugeInteger(int n) {
-
-
-	bool valid = (n > 0);
-	string digit;
-	string val = "";
-
-	/*
-	int sign = rand() % 1; // Randomly Determines if the number generated is negative (this is currently removed for this section of the lab but I can un-comment it if needed)
-	if (sign == 0) {
-		val += "-";
-	}*/
-
-	for (int i = 0; i < n; i++) { //adds a random digit n times
-		digit = to_string(rand() % 10);
-		val = digit + val;
-	}
-	if (valid) {
-		value = val;
-	}
-	else {
-		throw("Invalid arguments");
-	}
-}
-
 int HugeInteger::valCompare(string a, string b) {
 
 	string digit1;
